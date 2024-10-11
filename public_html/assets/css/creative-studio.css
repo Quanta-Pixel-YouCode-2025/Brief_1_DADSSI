@@ -58,9 +58,9 @@ body {
   background-color: #fff;
 }
 
-/* Main Container */
+/* Main Container */ 
 
-.main-container{
+/*.main-container{
   display: block;
   flex-direction: column;
   max-width: 1050px;
@@ -69,13 +69,20 @@ body {
   border-radius: 20px;
   padding: 15px;
 
-}
+}*/
 .main-content{
   /* border: #000 1px solid; */
   margin: 20px;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  margin: 20px 0;
+  max-width: 1050px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .main-item{
   /* border: red 2px solid; */
@@ -88,15 +95,16 @@ body {
   display: flex;
   flex-direction: column;
 }
-.main-content img{
-  /* border: blue 2px solid; */
+.parag_1 img{
   margin-right: 10px;
   width: 50%;
-  height: 25%;
+  height: 300px;
   border-radius: 20px;
 }
 .main-item h4{
-  font-size: 2em;
+  font-size: 3rem;
+  color: #ff214f;
+  font-weight: 700;
   text-align: center;
 }
 .main-item p{
@@ -667,6 +675,10 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.col-lg-4 img{
+  border-radius: 10px;
 }
 
 .col {
@@ -5122,10 +5134,15 @@ input[type="button"].btn-block {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   padding: 1.25rem;
+  align-items: center;
+}
+.card-body p{
+  text-align: center;
 }
 
 .card-title {
   margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .card-subtitle {
@@ -8960,6 +8977,7 @@ button.bg-dark:focus {
 .mt-3,
 .my-3 {
   margin-top: 1rem !important;
+  text-align: center;
 }
 
 .mr-3,
@@ -8970,6 +8988,7 @@ button.bg-dark:focus {
 .mb-3,
 .my-3 {
   margin-bottom: 1rem !important;
+  color: var(--pink);
 }
 
 .ml-3,
@@ -9018,6 +9037,7 @@ button.bg-dark:focus {
 .mb-5,
 .my-5 {
   margin-bottom: 3rem !important;
+  color: var(--pink);
 }
 
 .ml-5,
@@ -11032,10 +11052,12 @@ p {
 
 .mb-6 {
   margin-bottom: 65px !important;
+  color: var(--pink);
 }
 
 .mb-4 {
   margin-bottom: 30px !important;
+  text-align: center;
 }
 
 .bg-primary .navbar-brand,
@@ -11262,6 +11284,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+  
 }
 
 .testimonial-wrapper .img-holder {
@@ -11284,7 +11307,18 @@ p {
   background: #fff;
   padding: 20px 20px 20px 60px;
   border-radius: 0.2rem;
+  border-radius: 20px;
 }
+
+.testimonial-wrapper .body:hover{
+  background-color: var(--pink);
+  color: white;
+  transition: ease 1s;
+
+}
+
+
+
 
 .testimonial-wrapper .body .title {
   margin-top: 20px;
@@ -11337,6 +11371,7 @@ p {
 .box .box-item .box-title {
   font-size: 18px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .box .box-item:last-child {
@@ -11565,6 +11600,14 @@ p {
           flex-grow: 1;
   padding: 0 40px;
   height: 100%;
+}
+
+.infos .mb-4{
+  color: #ff214f;
+}
+  
+.form .mb-4{
+  color: #ff214f;
 }
 
 @media (max-width: 991.98px) {
